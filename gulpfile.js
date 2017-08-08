@@ -15,8 +15,14 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src(['src/js/*.js', './node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest('dist/js/'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('src/*.html', ['html']);
+  gulp.watch('src/css/*.css', ['css']);
+  gulp.watch('src/js/*.js', ['js']);
 });
 
 gulp.task('default', ['html', 'css', 'js']);
