@@ -19,9 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* Base style */
 body {
-  background: #fff;
   margin: 5rem auto;
   max-width: 62.5rem;
 }
@@ -29,6 +27,7 @@ body {
 #search {
   border-radius: 0;
   border-width: 0 0 2px;
+  font-size: 1.25em;
 }
 
 #search:focus {
@@ -49,12 +48,12 @@ body {
   width: 100%;
 }
 
+.button:hover,
 .button:focus {
   border-color: #9b4dca !important;
   color: #9b4dca !important;
 }
 
-/* Larger than mobile screen */
 @media (min-width: 40.0rem) {
   .column-33 {
     max-width: 33.3333%;
