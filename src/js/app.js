@@ -1,15 +1,20 @@
-var forEach = Array.prototype.forEach,
-  $$ = document.querySelectorAll.bind(document);
-forEach.call($$('.button'), function(v) {
-  v.addEventListener('click', function(e) {
-    var query = document.getElementById("search").value;
-    switch (v.id) {
-      case "ddg":
-        window.location = "https://duckduckgo.com/?q=" + query;
-        break;
-      case "searx":
-        window.location = "https://www.searx.me/?q=" + query;
-        break;
-    }
+var forEach = Array.prototype.forEach, $$ = document.querySelectorAll.bind(document);
+
+forEach.call($$(".button"), function(btn) {
+  btn.addEventListener("click", function(e) {
+    var url = btn.getAttribute("data-url");
+    var query = getSearchQuery();
+    window.open(url + query, "_blank");
   }, false);
 });
+
+document.getElementById("search").addEventListener("keydown", function(e) {
+  var query = getSearchQuery();
+  if (e.key === "Enter") {
+    window.location = document.getElementById("ddg").getAttribute("data-url") + query;
+  }
+});
+
+function getSearchQuery() {
+  return document.getElementById("search").value;
+}

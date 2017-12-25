@@ -35,12 +35,6 @@ body {
   padding: 10px;
 }
 
-.wrapper {
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-}
-
 #search {
   border: none;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0 ,0 ,0 ,0.08);
@@ -49,7 +43,8 @@ body {
   width: 100%
 }
 
-a {
+a:link,
+a:visited {
   color: #555;
   display: block;
   text-decoration: none;
@@ -72,7 +67,7 @@ footer {
   text-align: left;
 }
 
-footer a {
+footer a:link {
   display: inline;
 }
 
