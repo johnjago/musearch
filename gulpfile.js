@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var cleanCSS = require('gulp-clean-css');
+var minify = require('gulp-minify');
 
 gulp.task('html', function() {
   return gulp.src('src/*.html')
@@ -9,14 +10,20 @@ gulp.task('html', function() {
 });
 
 gulp.task('css', function() {
-  return gulp.src(['src/css/*.css', './node_modules/milligram/dist/milligram.min.css'])
+  return gulp.src('src/css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('js', function() {
-  return gulp.src(['src/js/*.js', './node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('dist/js/'));
+  gulp.src('src/js/*.js')
+    .pipe(minify({
+        ext: {
+            src:'.not-min.js',
+            min:'.js'
+        }
+    }))
+    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('watch', function() {

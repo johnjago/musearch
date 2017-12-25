@@ -1,0 +1,22 @@
+{
+  "name": "musearch",
+  "version": "0.1.0",
+  "description": "Search the web without visiting cluttered home pages.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/johnjago/musearch.git"
+  },
+  "author": "John Jago",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/johnjago/musearch/issues"
+  },
+  "homepage": "https://gitlab.com/johnjago/musearch#README",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-minify": "^2.1.0"
+  }
+}
