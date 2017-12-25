@@ -1,13 +1,27 @@
 Musearch
---------
 
-Search the web without visiting the cluttered home pages of search providers.
-This can also be used as a tool for testing SEO across various engines.
+  Search the web without visiting the cluttered home pages of search providers.
+  This can also be used for quickly testing SEO across various engines.
 
-License
--------
+DEVELOPMENT
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+  $ git clone git@gitlab.com:johnjago/musearch.git
+  $ cd musearch
+  $ npm install
+
+  This project uses gulp. To generate minified files:
+
+    $ gulp
+
+CONTRIBUTING
+
+  You can create a feature and then work on it:
+
+    https://gitlab.com/johnjago/musearch/issues
+
+LICENSE
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
