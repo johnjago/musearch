@@ -1,51 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Musearch</title>
+    <title>Musearch &middot; Search without visiting cluttered home pages</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Search the web without visiting the cluttered home pages of search providers.">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/milligram.css">
   </head>
   <body>
     <div class="container">
       <input id="search" type="text" name="query" placeholder="Search">
-      <div class="row">
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#" id="ddg">DuckDuckGo</a>
-        </div>
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#" id="searx">Searx.me</a>
-        </div>
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">StartPage</a>
-        </div>
+      <div>
+        <a class="button" href="#" id="ddg">DuckDuckGo</a>
+        <a class="button" href="#" id="google">Google</a>
+        <a class="button" href="#" id="yandex">Yandex</a>
       </div>
-      <div class="row">
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">Google</a>
-        </div>
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">Bing</a>
-        </div>
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">Yahoo</a>
-        </div>
+      <div>
+        <a class="button" href="#" id="searx">Searx.me</a>
+        <a class="button" href="#" id="bing">Bing</a>
+        <a class="button" href="#" id="yahoo">Yahoo</a>
       </div>
-      <div class="row">
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">Yandex</a>
-        </div>
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">Baidu</a>
-        </div>
-        <div class="column column-33 engine">
-          <a class="button button-outline" href="#">Dogpile</a>
-        </div>
+      <div>
+        <a class="button" href="#" id="sp">StartPage</a>
+        <a class="button" href="#" id="baidu">Baidu</a>
+        <a class="button" href="#" id="dp">Dogpile</a>
       </div>
     </div>
+    <footer>Musearch &middot; Search without visiting cluttered home pages &middot; <a href="https://gitlab.com/johnjago/musearch">Source</a></footer>
     <script src="js/app.js"></script>
   </body>
 </html>
