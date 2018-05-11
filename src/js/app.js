@@ -4,7 +4,7 @@ forEach.call($$(".button"), function(btn) {
   btn.addEventListener("click", function(e) {
     var url = btn.getAttribute("data-url");
     var query = getSearchQuery();
-    window.open(url + query, "_blank");
+    window.open(url + query, "_self");
   }, false);
 });
 
