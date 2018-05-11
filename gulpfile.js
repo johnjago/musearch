@@ -10,26 +10,26 @@ gulp.task('html', function() {
 });
 
 gulp.task('css', function() {
-  return gulp.src('src/css/*.css')
+  return gulp.src('src/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css/'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('js', function() {
-  gulp.src('src/js/*.js')
+  gulp.src('src/*.js')
     .pipe(minify({
         ext: {
             src:'.not-min.js',
             min:'.js'
         }
     }))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function() {
   gulp.watch('src/*.html', ['html']);
-  gulp.watch('src/css/*.css', ['css']);
-  gulp.watch('src/js/*.js', ['js']);
+  gulp.watch('src/*.css', ['css']);
+  gulp.watch('src/*.js', ['js']);
 });
 
 gulp.task('default', ['html', 'css', 'js']);
