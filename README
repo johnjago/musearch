@@ -1,7 +1,10 @@
 Musearch
 
-  Search the web without visiting the cluttered home pages of search providers.
-  This can also be used for quickly testing SEO across various engines.
+  Quickly search multiple search engines.
+
+EXAMPLE
+
+  https://www.johnjago.com/musearch/
 
 DEVELOPMENT
 
@@ -15,11 +18,7 @@ DEVELOPMENT
 
 CONTRIBUTING
 
-  You can create a feature and then work on it:
-
-    https://gitlab.com/johnjago/musearch/issues
-
-  See CONTRIBUTING for more details.
+  See CONTRIBUTING for details.
 
 LICENSE
 
