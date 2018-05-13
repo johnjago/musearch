@@ -67,10 +67,6 @@ footer {
   text-align: left;
 }
 
-footer a:link {
-  display: inline;
-}
-
 @media (max-width: 480px) {
   .container {
     flex-direction: column;
