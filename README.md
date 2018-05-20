@@ -8,20 +8,21 @@ https://www.johnjago.com/musearch/
 
 ## Development
 
-  $ git clone git@gitlab.com:johnjago/musearch.git
-  $ cd musearch
-  $ npm install
+    $ git clone git@gitlab.com:johnjago/musearch.git
+    $ cd musearch
+    $ npm install
 
 This project uses gulp. To generate minified files:
 
-  $ gulp
+    $ gulp
 
 ## Contributing
 
 You may [create a feature](https://gitlab.com/johnjago/musearch/issues) and
 work on it.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+See [CONTRIBUTING.md](https://gitlab.com/johnjago/musearch/blob/master/CONTRIBUTING.md)
+for details.
 
 ## License
 
