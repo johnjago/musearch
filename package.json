@@ -1,7 +1,7 @@
 {
   "name": "musearch",
-  "version": "0.2.0",
-  "description": "Search the web without visiting cluttered home pages.",
+  "version": "0.3.0",
+  "description": "Quickly search multiple search engines.",
   "main": "index.html",
   "repository": {
     "type": "git",
