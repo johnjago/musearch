@@ -1,6 +1,6 @@
 {
   "name": "musearch",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Quickly search multiple search engines.",
   "main": "index.html",
   "repository": {
