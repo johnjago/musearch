@@ -24,6 +24,6 @@ var search = document.getElementById('search');
 
 search.addEventListener('input', function() {
   Object.keys(hrefs).forEach(function(key, i) {
-    searchEngines[i].href = hrefs[key] + search.value;
+    searchEngineLinks[i].href = hrefs[key] + search.value;
   });
 });
