@@ -21,7 +21,7 @@ This project uses gulp. To generate minified files:
 You may [create a feature](https://gitlab.com/johnjago/musearch/issues) and
 work on it.
 
-See [CONTRIBUTING.md](https://gitlab.com/johnjago/musearch/blob/master/CONTRIBUTING.md)
+See [CONTRIBUTING](https://gitlab.com/johnjago/musearch/blob/master/CONTRIBUTING.md)
 for details.
 
 ## License
