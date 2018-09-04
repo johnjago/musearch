@@ -1,37 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Musearch</title>
+  <title>Musearch - Quickly search multiple search engines</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Quickly search multiple search engines.">
+  <meta name="description" content="Musearch is a tool that allows you to quickly search the same query in multiple search engines.">
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <input id="search" type="text" name="query" placeholder="Search">
-    <input type="submit" hidden="hidden">
-    <div>
-      <a class="button" href="" id="ddg">DuckDuckGo</a>
-      <a class="button" href="" id="google">Google</a>
-      <a class="button" href="" id="yandex">Yandex</a>
-      <a class="button" href="" id="sogou">Sogou</a>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title">Musearch</h1>
+          <p class="subtitle">Musearch is a tool that allows you to quickly search the same query in multiple search engines.</p>
+          <form id="searchForm">
+            <input class="input is-large" id="searchInput" type="text" name="query" placeholder="Search">
+          </form>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="buttons">
+            <a class="button is-large is-fullwidth" href="" id="ddg">DuckDuckGo</a>
+            <a class="button is-large is-fullwidth" href="" id="google">Google</a>
+            <a class="button is-large is-fullwidth" href="" id="yandex">Yandex</a>
+            <a class="button is-large is-fullwidth" href="" id="sogou">Sogou</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="buttons">
+            <a class="button is-large is-fullwidth" href="" id="searx">Searx.me</a>
+            <a class="button is-large is-fullwidth" href="" id="yahoo">Yahoo</a>
+            <a class="button is-large is-fullwidth" href="" id="baidu">Baidu</a>
+            <a class="button is-large is-fullwidth" href="" id="qwant">Qwant</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="buttons">
+            <a class="button is-large is-fullwidth" href="" id="startpage">StartPage</a>
+            <a class="button is-large is-fullwidth" href="" id="bing">Bing</a>
+            <a class="button is-large is-fullwidth" href="" id="dogpile">Dogpile</a>
+            <a class="button is-large is-fullwidth" href="" id="gigablast">Gigablast</a>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h2 class="title is-4">Options</h2>
+          <label class="checkbox">
+            <input type="checkbox" id="newTab">
+            Open searches in a new tab
+          </label>
+        </div>
+      </div>
+      <footer class="is-paddingless">
+        <a href="https://gitlab.com/johnjago/musearch">Improve this tool on GitLab</a>
+      </footer>
     </div>
-    <div>
-      <a class="button" href="" id="searx">Searx.me</a>
-      <a class="button" href="" id="yahoo">Yahoo</a>
-      <a class="button" href="" id="baidu">Baidu</a>
-      <a class="button" href="" id="qwant">Qwant</a>
-    </div>
-    <div>
-      <a class="button" href="" id="startpage">StartPage</a>
-      <a class="button" href="" id="bing">Bing</a>
-      <a class="button" href="" id="dogpile">Dogpile</a>
-      <a class="button" href="" id="gigablast">Gigablast</a>
-    </div>
-  </div>
-  <footer><a href="https://gitlab.com/johnjago/musearch">Contribute</a></footer>
+  </section>
   <script src="app.js"></script>
 </body>
 </html>
