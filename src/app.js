@@ -15,15 +15,30 @@ var hrefs = {
 
 var searchEngineLinks = [];
 
-Object.keys(hrefs).forEach(function(key) {
+Object.keys(hrefs).forEach(function (key) {
   var element = document.getElementById(key);
   searchEngineLinks.push(element);
 });
 
-var search = document.getElementById('search');
+var searchInput = document.getElementById('searchInput');
 
-search.addEventListener('input', function() {
+searchInput.addEventListener('input', function () {
   Object.keys(hrefs).forEach(function(key, i) {
-    searchEngineLinks[i].href = hrefs[key] + search.value;
+    searchEngineLinks[i].href = hrefs[key] + searchInput.value;
+  });
+});
+
+var searchForm = document.getElementById('searchForm');
+
+searchForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  window.location = hrefs.ddg + searchInput.value;
+});
+
+var newTab = document.getElementById('newTab');
+
+newTab.addEventListener('change', function () {
+  Object.keys(hrefs).forEach(function(key, i) {
+    searchEngineLinks[i].target = newTab.checked ? '_blank' : '_self';
   });
 });
