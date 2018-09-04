@@ -4,7 +4,7 @@ Improvements are always welcome!
 
 ## Issues
 
-Report bugs, defects, and other issues on the [GitLab issue tracker](https://gitlab.com/johnjago/musearch/issues).
+Report bugs and other issues on the [GitLab issue tracker](https://gitlab.com/johnjago/musearch/issues).
 
 ## Contributing Code
 
