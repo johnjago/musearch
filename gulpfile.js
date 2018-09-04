@@ -25,10 +25,15 @@ gulp.task('js', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('favicon', function() {
+  gulp.src('src/img/favicon-32x32.png')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('watch', function() {
   gulp.watch('src/*.html', ['html']);
   gulp.watch('src/*.scss', ['css']);
   gulp.watch('src/*.js', ['js']);
 });
 
-gulp.task('default', ['html', 'css', 'js']);
+gulp.task('default', ['html', 'css', 'js', 'favicon']);
