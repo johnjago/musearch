@@ -2,9 +2,7 @@
 
 Quickly search multiple search engines.
 
-## Live Demo
-
-https://www.johnjago.com/musearch/
+https://www.johnjago.com/musearch
 
 ## Development
 
@@ -12,16 +10,13 @@ https://www.johnjago.com/musearch/
     $ cd musearch
     $ npm install
 
-This project uses gulp. To generate minified files:
-
-    $ gulp
+To generate production files, run `gulp`.
 
 ## Contributing
 
-You may [create a feature](https://gitlab.com/johnjago/musearch/issues) and
-work on it.
+Bug reports, feature requests, and suggestions are welcome!
 
-See [CONTRIBUTING](https://gitlab.com/johnjago/musearch/blob/master/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://gitlab.com/johnjago/musearch/blob/master/CONTRIBUTING.md)
 for details.
 
 ## License

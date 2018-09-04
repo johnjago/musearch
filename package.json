@@ -1,6 +1,6 @@
 {
   "name": "musearch",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Quickly search multiple search engines.",
   "main": "index.html",
   "repository": {
@@ -16,6 +16,7 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-minify": "^2.1.0"
+    "gulp-minify": "^2.1.0",
+    "gulp-sass": "^4.0.1"
   }
 }
