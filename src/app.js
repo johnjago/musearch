@@ -16,7 +16,8 @@ var hrefs = {
 var searchEngineLinks = [];
 var searchInput = document.getElementById('searchInput');
 var searchForm = document.getElementById('searchForm');
-var newTab = document.getElementById('newTab');
+var openAllButton = document.getElementById('all');
+var newTabOption = document.getElementById('newTab');
 
 function initLinkElements() {
   Object.keys(hrefs).forEach(function (key) {
@@ -26,24 +27,44 @@ function initLinkElements() {
 }
 
 function buildLinks() {
-  Object.keys(hrefs).forEach(function(key, i) {
+  Object.keys(hrefs).forEach(function (key, i) {
     searchEngineLinks[i].href = hrefs[key] + searchInput.value;
   });
 }
 
-function openDefaultSearchEngine(e) {
+function openDefault(e) {
   e.preventDefault();
   window.location = hrefs.ddg + searchInput.value;
 }
 
+function openAll() {
+  if (!newTabOption.checked) {
+    Object.keys(hrefs).forEach(function (key, i) {
+      searchEngineLinks[i].target = '_blank';
+    });
+  }
+
+  searchEngineLinks.forEach(function (link) {
+    link.click();
+  });
+
+  if (!newTabOption.checked) {
+    Object.keys(hrefs).forEach(function (key, i) {
+      searchEngineLinks[i].target = '_self';
+    });
+  }
+}
+
 function toggleLinkTarget() {
-  Object.keys(hrefs).forEach(function(key, i) {
-    searchEngineLinks[i].target = newTab.checked ? '_blank' : '_self';
+  var newTarget = newTabOption.checked ? '_blank' : '_self';
+  Object.keys(hrefs).forEach(function (key, i) {
+    searchEngineLinks[i].target = newTarget;
   });
 }
 
 initLinkElements();
 window.onload = buildLinks;
 searchInput.addEventListener('input', buildLinks);
-searchForm.addEventListener('submit', openDefaultSearchEngine);
-newTab.addEventListener('change', toggleLinkTarget);
+searchForm.addEventListener('submit', openDefault);
+openAllButton.addEventListener('click', openAll);
+newTabOption.addEventListener('change', toggleLinkTarget);
