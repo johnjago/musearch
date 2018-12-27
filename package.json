@@ -7,17 +7,20 @@
     "type": "git",
     "url": "git+ssh://git@gitlab.com/johnjago/musearch.git"
   },
-  "license": "GPL-3.0",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://gitlab.com/johnjago/musearch/issues"
   },
   "homepage": "https://gitlab.com/johnjago/musearch#README",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-minify": "^2.1.0",
     "gulp-purgecss": "^1.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "bulma": "^0.7.2"
   }
 }
