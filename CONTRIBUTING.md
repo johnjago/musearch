@@ -1,18 +1,12 @@
-# Contributing to Musearch
+# Contributing
 
 Improvements are always welcome!
 
-## Issues
-
-Report bugs and other issues on the [GitLab issue tracker](https://gitlab.com/johnjago/musearch/issues).
-
-## Contributing Code
+Report bugs and make suggestions on the [GitLab issue tracker](https://gitlab.com/johnjago/musearch/issues).
 
 To contribute code, follow these steps:
 
-1. [Create an issue](https://gitlab.com/johnjago/musearch/issues) with the
-   appropriate label and describe what you are working on.
-2. Fork and clone the repository.
-3. Make your changes.
-4. Push your changes.
-5. Create a merge request.
+1. Fork and clone the repository.
+2. Make your changes.
+3. Push your changes.
+4. Create a merge request.

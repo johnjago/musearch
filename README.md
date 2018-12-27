@@ -1,8 +1,13 @@
 # Musearch
 
-Quickly search multiple search engines.
+Musearch allows you to quickly search multiple search engines. You can use
+this tool to test how your website appears in a variety of search engines
+without having to open every single one by hand.
 
-https://www.johnjago.com/musearch
+https://johnjago.com/musearch
+
+Have a suggestion or want to contribute a feature? Check out the
+[Contributing](CONTRIBUTING.md) guide.
 
 ## Development
 
@@ -12,16 +17,6 @@ https://www.johnjago.com/musearch
 
 To generate production files, run `gulp`.
 
-## Contributing
-
-Bug reports, feature requests, and suggestions are welcome!
-
-See [CONTRIBUTING.md](https://gitlab.com/johnjago/musearch/blob/master/CONTRIBUTING.md)
-for details.
-
 ## License
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+The Unlicense
