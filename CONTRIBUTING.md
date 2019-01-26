@@ -2,7 +2,7 @@
 
 Improvements are always welcome!
 
-Report bugs and make suggestions [on GitHub](https://gitlab.com/johnjago/musearch/issues).
+Report bugs and make suggestions [on GitHub](https://github.com/johnjago/musearch/issues).
 
 To contribute code, follow these steps:
 
