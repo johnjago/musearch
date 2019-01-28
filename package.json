@@ -5,13 +5,13 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/johnjago/musearch.git"
+    "url": "git+ssh://git@github.com/johnjago/musearch.git"
   },
   "license": "Unlicense",
   "bugs": {
-    "url": "https://gitlab.com/johnjago/musearch/issues"
+    "url": "https://github.com/johnjago/musearch/issues"
   },
-  "homepage": "https://gitlab.com/johnjago/musearch#README",
+  "homepage": "https://github.com/johnjago/musearch",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.9.0",

@@ -11,7 +11,7 @@ Have a suggestion or want to contribute a feature? Check out the
 
 ## Development
 
-    $ git clone git@gitlab.com:johnjago/musearch.git
+    $ git clone git@github.com:johnjago/musearch.git
     $ cd musearch
     $ npm install
 
